@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Mail, ChevronDown, CheckCircle, Heart, HeartPulse } from 'lucide-react'
 import { LogoMark } from './Logo'
 import { InstagramIcon, LinkedInIcon, YouTubeIcon } from './SocialIcons'
+import doctorPhoto from '../assets/dr-ananya-menon.jpg'
 
 export default function Hero({ onBook }) {
   const cardRef = useRef(null)
@@ -132,7 +133,7 @@ export default function Hero({ onBook }) {
               <div className="relative rounded-[24px] bg-gradient-to-br from-teal/80 via-blue-500/70 to-violet/80 p-[3px] shadow-[0_18px_40px_rgba(15,23,42,0.16)]">
                 <div className="relative overflow-hidden rounded-[21px] bg-slate-100">
                   <img
-                    src="/images/dr-ananya-menon.jpg"
+                    src={doctorPhoto}
                     alt="Dr. Ananya Menon, consultant cardiologist"
                     className="h-[210px] w-full scale-[1.15] object-cover object-[center_25%] lg:h-[325px]"
                   />
